@@ -1,0 +1,27 @@
+{
+  "name": "story-view",
+  "repo": "hkjels/story-view",
+  "description": "Scrum story view",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/collection": "*",
+    "component/domify": "*",
+    "component/each": "*",
+    "component/view": "*",
+    "hkjels/scrumcard-view": "*"
+  },
+  "development": {
+    "hkjels/task-model": "*",
+    "hkjels/story-model": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "story-view.css"
+  ]
+}

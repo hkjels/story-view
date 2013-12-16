@@ -1,0 +1,1 @@
+module.exports = '<div class="story" data-title="title">\n  <section class="todo"></section>\n  <section class="progress"></section>\n  <section class="done"></section>\n</div>\n';
