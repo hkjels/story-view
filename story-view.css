@@ -8,18 +8,36 @@
   height: 100%;
   width: 100%;
 }
+  .story::after {
+    background-color: rgb(176, 196, 222);
+    display: block;
+    content: ' ';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
   .story::before {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(176, 196, 222);
     box-sizing: border-box;
     content: attr(title);
-    padding: .3rem;
+    padding: .3rem .6rem;
     position: absolute;
     top: 0;
     z-index: 10;
   }
 
 .story .todo, .story .progress, .story .done {
-  flex: 1;
   min-height: 2rem;
+}
+
+.story .todo, .story .done {
+  flex: 1.1;
+}
+
+.story .progress {
+  flex: 0.8;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
 }
 

@@ -25,11 +25,6 @@ function StoryView(story) {
 
 StoryView.prototype.__proto__ = View.prototype;
 
-StoryView.prototype.addTask = function(task) {
-  this.obj.tasks.push(task);
-  this.addCard(task);
-};
-
 StoryView.prototype.addCard = function(task) {
   var card = new Card(task);
   var section = this.el.querySelector("." + task.state());
